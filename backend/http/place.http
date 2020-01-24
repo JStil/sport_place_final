@@ -1,0 +1,73 @@
+### get place router level list
+GET {{host-url}}/place/levels
+Cache-Control: no-cache
+Content-Type: application/json
+Accept: application/json
+
+
+### get all places
+GET {{host-url}}/place/
+Cache-Control: no-cache
+Content-Type: application/json
+Accept: application/json
+
+### get one place
+GET {{host-url}}/place/564
+Cache-Control: no-cache
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### create new place
+POST {{host-url}}/place/create
+Cache-Control: no-cache
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+{
+  "name": "Новое1",
+  "categoryId": 39,
+  "cityId": 121,
+  "address": "Около Ленты",
+  "latitude": "59.956359",
+  "longitude": "30.310081",
+  "description": "adadasd",
+  "working_hours_weekday_from": 5,
+  "working_hours_weekday_to": 6,
+  "working_hours_weekend_from": 7,
+  "working_hours_weekend_to": 8,
+  "serviceList": [
+    {
+      "name": "Парковка"
+    },
+    {
+      "name": "Душ"
+    },
+    {
+      "name": "Сауна"
+    },
+    {
+      "name": "Кафе"
+    }
+  ],
+  "routerList": [
+    {
+      "name": "Пегматитовый шток",
+      "levelId": 1,
+      "length": 1050,
+      "height": 650
+    },
+    {
+      "name": "Кислый топаз",
+      "levelId": 231,
+      "length": 500,
+      "height": 100
+    }
+  ]
+}
+
+###
+

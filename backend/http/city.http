@@ -1,0 +1,8 @@
+### get category list
+GET {{host-url}}/city/
+Cache-Control: no-cache
+Content-Type: application/json
+Accept: application/json
+
+###
+
